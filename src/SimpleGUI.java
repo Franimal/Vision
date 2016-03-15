@@ -18,7 +18,6 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.filechooser.FileFilter;
 
-
 public class SimpleGUI extends JPanel implements MouseListener {
 
 	private JFrame frame;
