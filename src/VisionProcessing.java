@@ -8,8 +8,11 @@ public class VisionProcessing {
 
 	/**
 	 * Focuses on a point (x,y) of the currently loaded image.  (x,y) should be percentages 0.0 -> 1.0 of the total width/height.
-	 * @param x percentage across the image to focus on
-	 * @param y percentage down the image to focus on
+	 * 
+	 * @param image The BufferedImage to focus on.
+	 * @param xPercent The percentage across the image (left -> right)
+	 * @param yPercent The percentage down the image (top -> bottom)
+	 * @return A new, processed BufferedImage.  The returned image is a deep copy of the original - that is, there is no reference to the original.
 	 */
 	public static BufferedImage focusOnPoint(BufferedImage image, float xPercent, float yPercent){
 		
